@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LeetCode Report Generator</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daily LeetCode Report</h1>
+    <form action="/submit" method="POST">
+      <input type="text" name="githubUser" placeholder="GitHub Username" required>
+      <input type="text" name="repoName" placeholder="Repo Name" required>
+      <label for="language" name="language" required>Choose a programming language:</label>
+      <select name="language" id="language">
+        <option value=".cpp">C++ (.cpp)</option>
+        <option value=".c">C (.c)</option>
+        <option value=".java">Java (.java)</option>
+        <option value=".py">Python (.py)</option>
+        <option value=".js">JavaScript (.js)</option>
+        <option value=".ts">TypeScript (.ts)</option>
+        <option value=".rb">Ruby (.rb)</option>
+        <option value=".go">Go (.go)</option>
+        <option value=".rs">Rust (.rs)</option>
+        <option value=".swift">Swift (.swift)</option>
+        <option value=".kt">Kotlin (.kt)</option>
+        <option value=".php">PHP (.php)</option>
+        <option value=".cs">C# (.cs)</option>
+        <option value=".html">HTML (.html)</option>
+        <option value=".css">CSS (.css)</option>
+        <option value=".sh">Shell Script (.sh)</option>
+        <option value=".sql">SQL (.sql)</option>
+        <option value=".r">R (.r)</option>
+        <option value=".dart">Dart (.dart)</option>
+        <option value=".scala">Scala (.scala)</option>
+      </select>
+      <br><br>
+
+  <label for="fromDate">From Date:</label>
+  <input type="date" id="fromDate" name="fromDate" required>
+
+  <br><br>
+
+  <label for="toDate">To Date:</label>
+  <input type="date" id="toDate" name="toDate" required>
+
+  <br><br>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <button type="submit">Generate Report</button>
+    </form>
+  </div>
+</body>
+</html>
