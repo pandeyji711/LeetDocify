@@ -1,8 +1,7 @@
 const axios = require("axios");
 const dayjs = require("dayjs");
-
-const GITHUB_TOKEN =
-  "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"; // Add your GitHub token here
+require("dotenv").config();
+const GITHUB_TOKEN = process.env.API_KEY;
 
 module.exports = async function fetchSubmissionsInRange(
   username,
