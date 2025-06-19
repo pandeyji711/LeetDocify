@@ -63,12 +63,9 @@ app.post("/submit", async (req, res) => {
     );
   }
 });
-function ch() {
-  const today = dayjs().format("YYYY-MM-DD");
-  console.log(today);
-}
-ch();
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () =>
-  console.log(`Server running on http://localhost:${PORT}`)
-);
+module.exports = app;
+
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, () =>
+//   console.log(`Server running on http://localhost:${PORT}`)
+// );
