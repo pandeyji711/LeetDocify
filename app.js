@@ -41,7 +41,7 @@ app.post("/submit", async (req, res) => {
     try {
       await fs.access(filePath); // Check if file exists asynchronously
       const today = dayjs().format("YYYY-MM-DD");
-      console.log(today);
+
       // Serve the file as a download
       res.download(filePath, `LeetCode_Report_${today}.docx`, async (err) => {
         if (err) {
